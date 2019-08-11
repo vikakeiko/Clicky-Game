@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 
 function Navbar(props) {
-  return 
+  return (
   <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
   <ul>
     <li className="brand">
@@ -17,6 +17,7 @@ function Navbar(props) {
     </li>
   </ul>
 </nav>
+  )
 }
 
 export default Navbar;

@@ -1,14 +1,14 @@
 import React from "react";
 import "./style.css";
+import { promised } from "q";
 
 function FriendCard(props) {
   return (
-    <div className="card" key={props.id}>
+    <div className="card">
       <div className="img-container">
+        <h1>{props.name}</h1>
         <img alt={props.name} src={props.image} />
       </div>
-      
-      {/* <span className="remove" onClick={() => props.deleteFriend(props.id)}>𝘅</span> */}
     </div>
   );
 }
