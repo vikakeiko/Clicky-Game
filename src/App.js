@@ -1,29 +1,32 @@
 import React, { Component } from 'react';
 import Jumbotron from './components/layout/jumbotron';
 import CityCard from "./components/ClickCard";
-import Navbar from "./components/Navbar";
+import ScoreBoard from "./components/Scoreboard";
 import city from "./city.json.js";
+import Footer from "./components/Footer";
 import "./App.css";
 
 
 export default class App extends Component {
   state = {
-    score: score,
-    isClicked: false 
+    // Card,
+    isClicked: false,
+    score: 0,
+    remaining: 9 
   }
-  
+
   render() {
 
     return (
       <div>
-        <Navbar />
+        <ScoreBoard />
         <Jumbotron>
           <h1 class="header">Clicky Game!</h1>
           <h2>Click on an image to earn points but do not click on any more than once!</h2>
         </Jumbotron>
         <Container>
           <CardList>
-            {this.state.friends.map(friend => (
+            {this.state.city.map(city => (
               <CityCard
                 key={city.id}
                 name={city.name}

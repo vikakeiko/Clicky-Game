@@ -1,16 +1,21 @@
 import React from "react";
-import "./style.css";
-import { promised } from "q";
+import Image from 'react-bootstrap/Image';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+// import { promised } from "q";
 
-function FriendCard(props) {
+function Card(props) {
   return (
-    <div className="card">
-      <div className="img-container">
-        <h1>{props.name}</h1>
-        <img alt={props.name} src={props.image} />
-      </div>
-    </div>
+
+    <Img
+      id={props.id}
+      onClick={() => props.handleClick(props.id)}
+      alt={props.name}
+      src={props.image}
+      height="200px"
+      width="200px"
+      rounded />
   );
 }
 
-export default FriendCard;
+export default Card;
