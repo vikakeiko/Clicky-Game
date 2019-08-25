@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
 // import Jumbotron from './components/Jumbotron/jumbotron';
-import Card from "./components/ClickCard/Click";
+import ClickCard from "./components/ClickCard/Click";
 // import ScoreBoard from "./components/ScoreBoard/scoreboard";
-// import card from "./city.json";
+import card from "./city.json";
 import "./App.css";
 // import Container from './components/Container';
 // import CardList from './components/CardList';
@@ -12,7 +12,7 @@ import "./App.css";
 
 export default class App extends React.Component {
   state = {
-    Card,
+    card,
     isClicked: [],
     score: 0,
     remaining: 9
@@ -71,19 +71,19 @@ export default class App extends React.Component {
             <h2>Click on an image to earn points but do not click on any more than once!</h2>
           </Jumbotron> */}
           {/* <CardList> */}
-            {this.state.card.map(card => {
-              return <Card
-                  key={card.id}
-                  name={card.name}
-                  id={card.id}
-                  image={card.image}
+            {this.state.card.map(e => {
+              return <ClickCard
+                  key={e.id}
+                  id={e.id}
+                  image={e.image}
+                  handleClick={e.handleClick}
                 />
             })}
           {/* </CardList> */}
         </div>
       </div>
     );
-  }
+  };
 }
 
 // export default App; 

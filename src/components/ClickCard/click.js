@@ -9,14 +9,14 @@ export default function CardList(props) {
   return (
     // <div>
       // {props.cities.map(props => (
-        <Image
+        <img
           id={props.id}
           onClick={() => props.handleClick(props.id)}
           alt={props.name}
           src={props.image}
           height="200px"
           width="200px"
-          rounded
+          // rounded
         />
       // ))}
     // </div>
