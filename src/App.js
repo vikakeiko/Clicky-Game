@@ -18,6 +18,7 @@ export default class App extends React.Component {
     remaining: 9
   };
 
+
   // algorithm 
   shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -30,10 +31,11 @@ export default class App extends React.Component {
   // clicked logic function
   // if clicked, add to clicked array. if it is already in array => lose game
   handleClick = (id) => {
+    alert("バカじゃない?");
     if (this.state.score === 9) {
       alert("YOU WIN!!");
       this.resetGame();
-    } else if (this.state.clicked.includes(id)) {
+    } else if (this.state.isClicked.includes(id)) {
       alert("YOU LOST!!");
       this.resetGame();
     } else {
@@ -76,7 +78,9 @@ export default class App extends React.Component {
                   key={e.id}
                   id={e.id}
                   image={e.image}
-                  handleClick={e.handleClick}
+                  handleClick={this.handleClick}
+                  // onClick={() => props.handleClick(props.id)}
+                  // handleClick={e.handleClick}
                 />
             })}
           {/* </CardList> */}

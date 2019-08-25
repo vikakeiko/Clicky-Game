@@ -1,13 +1,14 @@
 [
     {
         "id": 1,
-        "image": "./Images/almaty.jpeg"
+        "image": "./Images/almaty.jpeg",
+        "isClicked": false
        
     },
     {
         "id": 2,
-        "image": "./Images/berlin.jpeg"
-       
+        "image": "./Images/berlin.jpeg",
+        "isClicked": false
     },
     {
         "id": 3,
