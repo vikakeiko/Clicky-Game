@@ -15,7 +15,7 @@ export default function CardList(props) {
           src={props.image}
           height="200px"
           width="200px"
-          // rounded
+          borderRadius="200/2"
         />
       // ))}
     // </div>

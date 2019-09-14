@@ -12,53 +12,54 @@
     },
     {
         "id": 3,
-        "image": "./Images/brazil.jpeg"
-       
+        "image": "./Images/brazil.jpeg",
+        "isClicked": false
     },
     {
         "id": 4,
-        "image": "./Images/dubai.jpeg"
-       
+        "image": "./Images/dubai.jpeg",
+        "isClicked": false
     },
     {
         "id": 5,
-        "image": "./Images/effelTower.jpeg"
-       
+        "image": "./Images/effelTower.jpeg",
+        "isClicked": false
     },
     {
         "id": 6,
-        "image": "./Images/egypt.jpeg"
-       
+        "image": "./Images/egypt.jpeg",
+        "isClicked": false
     },
     {
         "id": 7,
-        "image": "./Images/egypt.jpeg"
-       
+        "image": "./Images/egypt.jpeg",
+        "isClicked": false
     },
     {
         "id": 8,
-        "image": "./Images/italy.jpeg"
-       
+        "image": "./Images/italy.jpeg",
+        "isClicked": false
     },
     {
         "id": 9,
-        "image": "./Images/madeiraPortugal.jpeg"
-       
+        "image": "./Images/madeiraPortugal.jpeg",
+        "isClicked": false
     },
     {
         "id": 10,
-        "image": "./Images/madridSpain.jpeg"
+        "image": "./Images/madridSpain.jpeg",
+        "isClicked": false
        
     },
     {
         "id": 11,
-        "image": "./Images/moscow.jpeg"
-       
+        "image": "./Images/moscow.jpeg",
+        "isClicked": false  
     },
     {
         "id": 12,
-        "image": "./Images/paris.jpeg"
-       
+        "image": "./Images/paris.jpeg",
+        "isClicked": false    
     }
 
 ]

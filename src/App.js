@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 // import Jumbotron from './components/Jumbotron/jumbotron';
-import ClickCard from "./components/ClickCard/Click";
+import ClickCard from "./components/ClickCard/click.js";
 // import ScoreBoard from "./components/ScoreBoard/scoreboard";
 import card from "./city.json";
 import "./App.css";
@@ -31,7 +31,6 @@ export default class App extends React.Component {
   // clicked logic function
   // if clicked, add to clicked array. if it is already in array => lose game
   handleClick = (id) => {
-    alert("バカじゃない?");
     if (this.state.score === 9) {
       alert("YOU WIN!!");
       this.resetGame();
